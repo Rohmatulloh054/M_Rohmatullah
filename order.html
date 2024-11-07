@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Order Cleaning Laundry</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        form input[type="text"],
+        form input[type="tel"],
+        form input[type="date"],
+        form input[type="time"],
+        form select,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        form textarea {
+            resize: vertical;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Form Order Cleaning Laundry</h2>
+        <form action="#" method="post">
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+
+            <label for="phone" type="integer">Nomor Telepon</label>
+            <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon" required>
+
+            <label for="address">Alamat</label>
+            <textarea id="address" name="address" rows="3" placeholder="Masukkan alamat lengkap Anda" required></textarea>
+
+            <label for="service">Jenis Layanan</label>
+            <select id="service" name="service" required>
+                <option value="">Pilih layanan</option>
+                <option value="dry_cleaning">Harga Kiloan</option>
+                <option value="washing">Paket Hemat</option>
+                <option value="ironing">Cuci Kilat</option>
+            </select>
+
+            <label for="date">Tanggal Pemesanan</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Waktu Pemesanan</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="notes">Catatan Tambahan</label>
+            <textarea id="notes" name="notes" rows="3" placeholder="Catatan tambahan"></textarea>
+
+            <button type="submit">Kirim Pesanan</button>
+        </form>
+    </div>
+</body>
+</html>
